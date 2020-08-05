@@ -1,0 +1,24 @@
+{
+  "name": "punjabi-name-generator",
+  "version": "1.0.0",
+  "description": "a handy npm to generate random punjabi names (male, female or random)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rising-entropy/pun-names-npm.git"
+  },
+  "keywords": [
+    "punjabi",
+    "name",
+    "generator"
+  ],
+  "author": "devangk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rising-entropy/pun-names-npm/issues"
+  },
+  "homepage": "https://github.com/rising-entropy/pun-names-npm#readme"
+}
