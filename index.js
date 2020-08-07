@@ -59,7 +59,7 @@ exports.femaleMarathi = function() {
 var malebengali = ["Abhik", "Abhoy", "Achintya", "Arnab", "Benoy", "Bhaskor",
 "Bipin", "Daiwik", "Debesh", "Hrishab", "Indroneel", "Palash", "Paritosh", "Shirshendu", "Shubhang",
 "Sourav", "Subrata", "Tapan", "Gairik", "Ujjwal"];
-var femalebengali = ["Ankolika", "Arundhati", "Bidisha", "Bibhuti", "Bipasha", "Chaitali", "Debjani", "Debolina", "Drishti", "Durba", "Joyeeta", "Kajol", "Kshamya", "Indrani", "Lotika", "Mishti", 
+var femalebengali = ["Ankolika", "Arundhati", "Bidisha", "Bibhuti", "Bipasha", "Chaitali", "Debjani", "Debolina", "Drishti", "Durba", "Joyeeta", "Kajol", "Kshamya", "Indrani", "Lotika", "Mishti",
 "Naisha", "Pakhi", "Paromita", "Piyali", "Sagarika", "Shorbari", "Shoma", "Sushmita", "Tavishi", "Tvisha", "Yoshita"];
 var unionSuffixBengali = [...malebengali, ...femalebengali];
 
@@ -80,4 +80,24 @@ exports.femaleBengali = function() {
 
 //gujarati
 
-console.log(this.maleMarathi());
+var malegujarati = ["Dhaval", "Haanish", "Herik", "Jigar", "Jignesh", "Joshil", "Mukund", "Munjal", "Oresh", "Prakat", "Pratul",
+"Praful", "Praveen", "Prerit", "Devang", "Pujesh", "Raghubeer", "Sanam", "Yaksh", "Ahem", "Yug", "Yuvan", "Ronak"];
+var femalegujarati = ["Hinal", "Hiral", "Havya", "Jaimini", "Komal", "Jigna", "Raashi", "Kavya", "Nutan", "Pranauthi", "Puruvi",
+"Tanishka", "Vaishnavi", "Vanshi", "Vrishti", "Vritika", "Kanchan"];
+var unionSuffixGujarati = [...malegujarati, ...femalegujarati];
+
+exports.randomGujarati = function() {
+    var randomIndex = Math.floor(Math.random()*unionSuffixGujarati.length);
+    return unionSuffixGujarati[randomIndex];
+}
+
+exports.maleGujarati = function() {
+    var randomIndex = Math.floor(Math.random()*malegujarati.length);
+    return malegujarati[randomIndex];
+}
+
+exports.femaleGujarati = function() {
+    var randomIndex = Math.floor(Math.random()*femalegujarati.length);
+    return femalegujarati[randomIndex];
+}
+
