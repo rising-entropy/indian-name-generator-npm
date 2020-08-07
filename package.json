@@ -1,7 +1,7 @@
 {
   "name": "indian-name-generator",
   "version": "4.0.0",
-  "description": "a handy npm to generate random punjabi names (male, female or random)",
+  "description": "a handy npm to generate random Indian names (male, female or random)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
