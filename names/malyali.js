@@ -5,9 +5,9 @@ var malemalyali = ["Aadesh","Abimanyu","Akhilesh","Amish","Balaji","Balmohan","B
 var unionSuffixMalyali = [...femalemalyali, ...malemalyali];
 
 module.exports = {
-  femalemalyali,
-  malemalyali,
-  unionSuffixMalyali
+  femalemalayali,
+  malemalayali,
+  unionSuffixMalayali
 };
 
 
