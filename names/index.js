@@ -3,7 +3,7 @@ var Gujarati = require('./gujarati');
 var Marathi = require('./marathi');
 var Marwari = require('./marwari');
 var Punjabi = require('./punjabi');
-var Malyali = require('./malyali');
+var Malayali = require('./malayali');
 
 module.exports = {
   Bengali,
@@ -11,5 +11,5 @@ module.exports = {
   Marathi,
   Marwari,
   Punjabi,
-  Malyali
+  Malayali
 };
