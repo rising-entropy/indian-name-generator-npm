@@ -6,6 +6,7 @@ Currently it features names from:
 - Punjabi.
 - Gujarati.
 - Bengali.
+- Marwari.
 
 ## Documentation:
 After Installing the module,
@@ -26,7 +27,7 @@ This syntax is followed to all above-listed cultures.
 Help add more names and more culture expansion.
 Join on <a href="https://github.com/rising-entropy/indian-name-generator-npm">GitHub</a>.
 
-#### Reach Me: 
+#### Reach Me:
 <a href="mailto:risingentropy20@gmail.com">risingentropy20@gmail.com</a>
 
 

@@ -1,9 +1,11 @@
+var {Punjabi, Marathi, Bengali, Gujarati, Marwari} = require('./names')
+
 //Punjabi
 
-var mainNamePunjabi = ["Gagan", "Har", "Bal", "Man", "Nav", "Sukh", "Kush", "Gur", "Karam", "Karan", "Dil", "Dharam", "Param", "Dal", "Jas", "Par", "Dul"];
-var maleSuffixPunjabi = ["jeet", "jyot", "vinder", "preet", "meet"];
-var femaleSuffixPunjabi = ["preet", "jeet", "bir"];
-let unionSuffixPunjabi = [...maleSuffixPunjabi, ...femaleSuffixPunjabi];
+var mainNamePunjabi = Punjabi.mainNamePunjabi;
+var maleSuffixPunjabi = Punjabi.maleSuffixPunjabi;
+var femaleSuffixPunjabi = Punjabi.femaleSuffixPunjabi;
+let unionSuffixPunjabi = Punjabi.unionSuffixPunjabi;
 
 exports.randomPunjabi = function () {
     var indexMain = Math.floor(Math.random() * mainNamePunjabi.length);
@@ -26,16 +28,11 @@ exports.femalePunjabi = function () {
     return s1 + s2;
 }
 
-
 //Marathi
 
-var malemarathi = ["Aarav", "Kshitij", "Shantanu", "Onkar", "Aniket", "Atharva", "Prajwal", "Yash", "Abhijeet", "Ganesh", "Sachin", "Prathamesh", "Vaibhav", "Ninad", "Mihir", "Tejas", "Suyash", "Sanket", "Devang", "Darshan", "Soham", "Rohit", "Manish", "Aadesh", "Siddhesh",
-"Aakash", "Anmol", "Chaitanya", "Dharmesh", "Gagan", "Gaurav", "Gopal", "Ishan", "Mehul", "Om", "Rahul", "Sandesh", "Tanmay", "Tushar", "Utkarsh",
-"Vedang", "Varun", "Vinay", "Vivek", "Yogesh"];
-var femalemarathi = ["Vaishnavi", "Maithili", "Pooja", "Smital", "Shivani", "Veerja", "Shruti", "Aditi", "Manali", "Anuja", "Pranali", "Saloni",
-"Aabha", "Aakriti", "Aruni", "Akanksha", "Akshata", "Aboli", "Ankita", "Chaitrali", "Divya", "Dhriti", "Gargi", "Gayatri", "Gauravi", "Gautami", "Isha", "Ishika",
-"Kajal", "Kalyani", "Neha", "Nishi", "Tanvi", "Yuti"];
-var unionSuffixMarathi = [...malemarathi, ...femalemarathi];
+var malemarathi = Marathi.malemarathi;
+var femalemarathi = Marathi.femalemarathi;
+var unionSuffixMarathi = Marathi.unionSuffixMarathi;
 
 exports.randomMarathi = function() {
     var randomIndex = Math.floor(Math.random()*unionSuffixMarathi.length);
@@ -52,16 +49,11 @@ exports.femaleMarathi = function() {
     return femalemarathi[randomIndex];
 }
 
+//Bengali
 
-
-//bengali
-
-var malebengali = ["Abhik", "Abhoy", "Achintya", "Arnab", "Benoy", "Bhaskor",
-"Bipin", "Daiwik", "Debesh", "Hrishab", "Indroneel", "Palash", "Paritosh", "Shirshendu", "Shubhang",
-"Sourav", "Subrata", "Tapan", "Gairik", "Ujjwal"];
-var femalebengali = ["Ankolika", "Arundhati", "Bidisha", "Bibhuti", "Bipasha", "Chaitali", "Debjani", "Debolina", "Drishti", "Durba", "Joyeeta", "Kajol", "Kshamya", "Indrani", "Lotika", "Mishti",
-"Naisha", "Pakhi", "Paromita", "Piyali", "Sagarika", "Shorbari", "Shoma", "Sushmita", "Tavishi", "Tvisha", "Yoshita"];
-var unionSuffixBengali = [...malebengali, ...femalebengali];
+var malebengali = Bengali.malebengali;
+var femalebengali = Bengali.femalebengali;
+var unionSuffixBengali = Bengali.unionSuffixBengali;
 
 exports.randomBengali = function() {
     var randomIndex = Math.floor(Math.random()*unionSuffixBengali.length);
@@ -78,13 +70,11 @@ exports.femaleBengali = function() {
     return femalebengali[randomIndex];
 }
 
-//gujarati
+//Gujarati
 
-var malegujarati = ["Dhaval", "Haanish", "Herik", "Jigar", "Jignesh", "Joshil", "Mukund", "Munjal", "Oresh", "Prakat", "Pratul",
-"Praful", "Praveen", "Prerit", "Devang", "Pujesh", "Raghubeer", "Sanam", "Yaksh", "Ahem", "Yug", "Yuvan", "Ronak"];
-var femalegujarati = ["Hinal", "Hiral", "Havya", "Jaimini", "Komal", "Jigna", "Raashi", "Kavya", "Nutan", "Pranauthi", "Puruvi",
-"Tanishka", "Vaishnavi", "Vanshi", "Vrishti", "Vritika", "Kanchan"];
-var unionSuffixGujarati = [...malegujarati, ...femalegujarati];
+var malegujarati = Gujarati.malegujarati;
+var femalegujarati = Gujarati.femalegujarati;
+var unionSuffixGujarati = Gujarati.unionSuffixGujarati;
 
 exports.randomGujarati = function() {
     var randomIndex = Math.floor(Math.random()*unionSuffixGujarati.length);
@@ -100,4 +90,27 @@ exports.femaleGujarati = function() {
     var randomIndex = Math.floor(Math.random()*femalegujarati.length);
     return femalegujarati[randomIndex];
 }
+
+// Marwari
+
+var malemarwari = Marwari.malemarwari;
+var femalemarwari = Marwari.femalemarwari;
+var unionSuffixMarwari = Marwari.unionSuffixMarwari;
+
+exports.randomMarwari = function() {
+    var randomIndex = Math.floor(Math.random()*unionSuffixMarwari.length);
+    return unionSuffixMarwari[randomIndex];
+}
+
+exports.maleMarwari = function() {
+    var randomIndex = Math.floor(Math.random()*malemarwari.length);
+    return malemarwari[randomIndex];
+}
+
+exports.femaleMarwari = function() {
+    var randomIndex = Math.floor(Math.random()*femalemarwari.length);
+    return femalemarwari[randomIndex];
+}
+
+
 
